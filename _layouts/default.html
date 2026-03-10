@@ -5,7 +5,7 @@
   </head>
   <body>
     <div class="total">
-      <div id="left-column">
+      <aside id="left-column">
         <header id="global-head">
           <h1 id="Researcher">{{ site.data.profile.name }}</h1>
           <p>
@@ -16,9 +16,9 @@
         </header>
 
         {% include sidebar.html %}
-      </div>
+      </aside>
 
-      <div id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar" role="button" tabindex="0">
+      <div id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="left-column" role="button" tabindex="0">
         <div>
           <span></span>
           <span></span>

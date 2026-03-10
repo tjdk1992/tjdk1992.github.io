@@ -12,22 +12,21 @@
   position: sticky;
   top: 25px;
   align-self: start;
-  padding-left: 25px;
-  padding-right: 0;
-  margin-right: 0;
+  width: 355px;
+  margin: 25px 0 0 25px;
+  background: #fff;
+  text-align: left;
 }
 
 #global-head {
   width: 100%;
-  text-align: left;
   padding-top: 35px;
   padding-left: 55px;
   padding-right: 30px;
   padding-bottom: 25px;
   color: rgb(50, 50, 50);
-  background: #fff;
+  background: transparent;
   margin: 0;
-  border-bottom: none;
 }
 
 #global-head p {
@@ -39,7 +38,7 @@
 
 #sidebar {
   width: 100%;
-  background: #fff;
+  background: transparent;
   text-align: left;
   font-size: 15px;
   padding-top: 0;
@@ -54,7 +53,6 @@
   padding-right: 25px;
   padding-bottom: 10px;
   padding-left: 0;
-  margin-left: 0;
   min-width: 0;
 }
 
@@ -94,13 +92,12 @@
 @media screen and (max-width: 1150px) {
   .total {
     grid-template-columns: 330px minmax(0, 1fr);
-    column-gap: 0;
   }
 
   #left-column {
+    width: 330px;
+    margin: 10px 0 0 10px;
     top: 10px;
-    padding-left: 10px;
-    padding-right: 0;
   }
 
   #global-head {
@@ -117,19 +114,17 @@
   #main {
     padding-top: 10px;
     padding-right: 10px;
-    padding-left: 0;
   }
 }
 
 @media screen and (max-width: 1050px) {
   .total {
     grid-template-columns: 310px minmax(0, 1fr);
-    column-gap: 0;
   }
 
   #left-column {
-    padding-left: 0;
-    padding-right: 0;
+    width: 310px;
+    margin: 0;
     top: 0;
   }
 
@@ -147,11 +142,10 @@
   #main {
     padding-top: 0;
     padding-right: 0;
-    padding-left: 0;
   }
 }
 
-/* mobile: return to slide-in sidebar */
+/* mobile: slide-in left column */
 @media screen and (max-width: 900px) {
   .total {
     display: block;
@@ -159,46 +153,44 @@
   }
 
   #left-column {
-    position: static;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  #global-head {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 25px;
-    background: rgba(255, 255, 255, 1);
-    line-height: 10px;
-    z-index: 100;
-  }
-
-  #global-head p {
-    color: rgb(85, 85, 85);
-    font-size: 12px;
-  }
-
-  #sidebar {
     position: fixed;
     top: 0;
     right: -300px;
     width: 270px;
     height: 100%;
     margin: 0;
-    padding-top: 100px;
+    background: #fff;
+    transition: .35s ease-in-out;
+    z-index: 300;
+    overflow-y: auto;
+  }
+
+  #global-head {
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background: transparent;
+  }
+
+  #global-head p {
+    color: rgb(85, 85, 85);
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  #sidebar {
+    width: 100%;
+    padding-top: 0;
     padding-left: 40px;
     padding-right: 20px;
     padding-bottom: 25px;
-    background: #fff;
-    color: #333;
-    transition: .35s ease-in-out;
-    z-index: 300;
+    background: transparent;
   }
 
   #main {
-    padding-top: 160px;
+    padding-top: 25px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 10px;
@@ -212,15 +204,32 @@
     padding: 25px 25px 25px 25px;
   }
 
+  .open #left-column {
+    transform: translate3d(-300px, 0, 0);
+  }
+
   #overlay {
     z-index: 200;
   }
 }
 
 @media screen and (max-width: 400px) {
-  #sidebar {
+  #left-column {
     right: -200px;
     width: 200px;
-    padding-top: 60px;
+  }
+
+  .open #left-column {
+    transform: translate3d(-200px, 0, 0);
+  }
+
+  #global-head {
+    padding-left: 25px;
+    padding-right: 15px;
+  }
+
+  #sidebar {
+    padding-left: 25px;
+    padding-right: 15px;
   }
 }
