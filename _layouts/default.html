@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    {% include head.html %}
-  </head>
-  <body>
-    <div class="page-shell">
-      <div class="total">
-        <aside id="left-column">
-          <header id="global-head">
-            <h1 id="Researcher">{{ site.data.profile.name }}</h1>
-            <p>
-              {{ site.data.profile.affiliation_1 }}<br>
-              and<br>
-              {{ site.data.profile.affiliation_2 }}
-            </p>
-          </header>
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <div class="total">
+    <header id="global-head">
+      <h1 id="Researcher">{{ site.data.profile.name }}</h1>
+      <p>
+        {{ site.data.profile.affiliation_1 }}
+        <br>and
+        <br>{{ site.data.profile.affiliation_2 }}
+      </p>
+    </header>
 
-          {% include sidebar.html %}
-        </aside>
-
-        <main id="main">
-          <div id="main-in">
-            {{ content }}
-            {% include footer.html %}
-          </div>
-        </main>
+    <div id="nav-toggle" aria-label="Menu" aria-expanded="false" role="button" tabindex="0">
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
 
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-  </body>
+    {% include sidebar.html %}
+
+    <main id="main">
+      <div id="main-in">
+        {{ content }}
+        {% include footer.html %}
+      </div>
+    </main>
+
+    <div id="overlay"></div>
+  </div>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
 </html>

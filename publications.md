@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Publication
-description: Publications of Daiki Tomojiri
-page_css: /assets/css/pages/home.css
+description: tmjdk-oecologist
+page_css: /assets/css/pages/publications.css
 permalink: /publications/
 ---
 
@@ -11,13 +11,14 @@ permalink: /publications/
 
   {% for group in site.data.publications %}
     <h2>{{ group.year }}</h2>
+
     {% for pub in group.entries %}
-      <p>
+      <p class="publication-entry">
         {{ pub.authors }}<br>
-        <strong>{{ pub.title }}</strong><br>
-        <em>{{ pub.journal }}</em>
-        {% if pub.doi %}
-          <br><a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">DOI</a>
+        “{{ pub.title }}”<br>
+        <span class="journal">{{ pub.journal }}</span>
+        {% if pub.doi and pub.doi != "" %}
+          <br><a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">{{ pub.doi }}</a>
         {% endif %}
       </p>
     {% endfor %}

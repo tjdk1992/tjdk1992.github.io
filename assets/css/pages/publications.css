@@ -1,1 +1,85 @@
-/* Reserved for future page-specific publication styles */
+#main {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+#main-in {
+  padding-left: 300px;
+}
+
+#main p {
+  margin-bottom: 1em;
+  line-height: 1.9;
+  color: rgb(50, 50, 50);
+}
+
+#main section {
+  background-color: rgb(245, 245, 245);
+  padding: 25px 100px 25px 100px;
+}
+
+#main .welcome {
+  padding-top: 30px;
+}
+
+#main h1 {
+  color: rgb(50, 50, 50);
+  font-size: 3em;
+  margin-bottom: .7em;
+}
+
+#main h2 {
+  color: rgb(50, 50, 50);
+  font-size: 200%;
+  margin-top: 1.4em;
+  margin-bottom: .6em;
+}
+
+.publication-entry {
+  margin-bottom: 1.4em;
+}
+
+.journal {
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 12px;
+  background-color: rgb(245, 245, 245);
+  color: #666;
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1150px) {
+  #main {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #main {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #main {
+    padding-top: 160px;
+  }
+
+  #main section {
+    padding: 25px 25px 25px 25px;
+  }
+
+  #main-in {
+    padding-left: 0;
+  }
+}

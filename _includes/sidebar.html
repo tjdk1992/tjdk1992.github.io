@@ -1,29 +1,29 @@
-<nav id="sidebar">
-  <div id="global-nav">
+<aside id="sidebar">
+  <nav id="global-nav">
     <ul>
       {% for item in site.data.navigation %}
-      <li>
-        {% if item.external %}
-          <a href="{{ item.url | relative_url }}" target="_blank" rel="noopener noreferrer">
-            {% if item.strong %}<strong>{{ item.label }}</strong>{% else %}{{ item.label }}{% endif %}
-          </a>
-        {% else %}
-          <a href="{{ item.url | relative_url }}">
-            {% if item.strong %}<strong>{{ item.label }}</strong>{% else %}{{ item.label }}{% endif %}
-          </a>
-        {% endif %}
-      </li>
+        <li>
+          {% if item.external %}
+            <a href="{{ item.url | relative_url }}" target="_blank" rel="noopener noreferrer">
+              {% if item.strong %}<strong>{{ item.label }}</strong>{% else %}{{ item.label }}{% endif %}
+            </a>
+          {% else %}
+            <a href="{{ item.url | relative_url }}">
+              {% if item.strong %}<strong>{{ item.label }}</strong>{% else %}{{ item.label }}{% endif %}
+            </a>
+          {% endif %}
+        </li>
       {% endfor %}
     </ul>
-  </div>
+  </nav>
 
   <div class="socialmedia">
     {% for item in site.data.social %}
-    <p>
-      <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ item.name }}">
-        <i class="{{ item.icon }}"></i>
-      </a>
-    </p>
+      <p>
+        <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ item.name }}">
+          <i class="{{ item.icon }}"></i>
+        </a>
+      </p>
     {% endfor %}
   </div>
-</nav>
+</aside>

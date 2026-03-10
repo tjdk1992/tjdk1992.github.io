@@ -1,15 +1,12 @@
 ---
 layout: default
 title: Research
-description: Research of Daiki Tomojiri
-page_css: /assets/css/pages/home.css
+description: tmjdk-oecologist
+page_css: /assets/css/pages/research.css
 permalink: /research/
 ---
 
 <section class="welcome">
   <h1>Research</h1>
-  <p>
-    This page introduces my research themes, including coral reef ecology, fish biodiversity, eDNA metabarcoding,
-    invasive species, and socio-ecological systems.
-  </p>
+  <p>Replace this section with the contents of your original research page.</p>
 </section>
