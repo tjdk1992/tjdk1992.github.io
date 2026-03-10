@@ -4,26 +4,28 @@
     {% include head.html %}
   </head>
   <body>
-    <div class="total">
-      <aside id="left-column">
-        <header id="global-head">
-          <h1 id="Researcher">{{ site.data.profile.name }}</h1>
-          <p>
-            {{ site.data.profile.affiliation_1 }}
-            <br>and
-            <br>{{ site.data.profile.affiliation_2 }}
-          </p>
-        </header>
+    <div class="page-shell">
+      <div class="total">
+        <aside id="left-column">
+          <header id="global-head">
+            <h1 id="Researcher">{{ site.data.profile.name }}</h1>
+            <p>
+              {{ site.data.profile.affiliation_1 }}<br>
+              and<br>
+              {{ site.data.profile.affiliation_2 }}
+            </p>
+          </header>
 
-        {% include sidebar.html %}
-      </aside>
+          {% include sidebar.html %}
+        </aside>
 
-      <main id="main">
-        <div id="main-in">
-          {{ content }}
-          {% include footer.html %}
-        </div>
-      </main>
+        <main id="main">
+          <div id="main-in">
+            {{ content }}
+            {% include footer.html %}
+          </div>
+        </main>
+      </div>
     </div>
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
