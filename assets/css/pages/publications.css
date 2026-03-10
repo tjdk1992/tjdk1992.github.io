@@ -27,22 +27,44 @@
 #main h1 {
   color: rgb(50, 50, 50);
   font-size: 3em;
-  margin-bottom: .7em;
+  margin-bottom: .9em;
 }
 
 #main h2 {
   color: rgb(50, 50, 50);
-  font-size: 200%;
-  margin-top: 1.4em;
-  margin-bottom: .6em;
+  font-size: 180%;
+  margin-top: 1.6em;
+  margin-bottom: .7em;
+  padding-bottom: .15em;
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.publication-year-block:first-of-type h2 {
+  margin-top: 0.3em;
 }
 
 .publication-entry {
-  margin-bottom: 1.4em;
+  margin-bottom: 1.6em;
+}
+
+.publication-authors {
+  margin-bottom: 0.15em;
+}
+
+.publication-title {
+  margin-bottom: 0.2em;
+}
+
+.publication-journal-line {
+  margin-bottom: 0;
 }
 
 .journal {
   font-style: italic;
+}
+
+.publication-entry a {
+  word-break: break-word;
 }
 
 #copyright {
@@ -60,6 +82,10 @@
     padding-right: 10px;
     padding-top: 10px;
   }
+
+  #main section {
+    padding: 25px 60px 25px 60px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -67,6 +93,10 @@
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
+  }
+
+  #main section {
+    padding: 25px 40px 25px 40px;
   }
 }
 
@@ -81,5 +111,13 @@
 
   #main-in {
     padding-left: 0;
+  }
+
+  #main h1 {
+    font-size: 2.4em;
+  }
+
+  #main h2 {
+    font-size: 160%;
   }
 }
