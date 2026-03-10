@@ -3,6 +3,9 @@
     - authors: "Tomojiri, D., Takaya, K., Otani, Y., & Shibata, A."
       title: "Artificial structures that help prevent beach erosion create a sandy beach environment that facilitates the burial of debris"
       journal: "Estuarine, Coastal and Shelf Science"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"
       doi: ""
 
 - year: 2025
@@ -10,10 +13,16 @@
     - authors: "Tomojiri, D., Takaya, K., Otani, Y., & Shibata, A."
       title: "Artificial structures that help prevent beach erosion create a sandy beach environment that facilitates the burial of debris"
       journal: "Estuarine, Coastal and Shelf Science"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"
       doi: "https://doi.org/10.1016/j.ecss.2024.109084"
     - authors: "Tomojiri, D., & Takaya, K."
       title: "Aspects of public attention on the most mentioned nonindigenous species, as determined by a comprehensive assessment of Japanese social media"
       journal: "Biological Invasions"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"
       doi: "https://doi.org/10.1007/s10530-024-03520-1"
 
 - year: 2024
@@ -21,6 +30,9 @@
     - authors: "Leong, C., Solomone, M., Shinjo, R., Tomojiri, D., Uchiyama, C., Yasumoto, J., & Razafindrabe, B"
       title: "Reply to discussion of “An assessment of small island hydrological research activity conducted in the Oceania Region”"
       journal: "Hydrological Sciences Journal"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"
       doi: "https://doi.org/10.1080/02626667.2024.2378106"
 
 - year: 2023
@@ -28,10 +40,16 @@
     - authors: "Takaya, K., & Tomojiri, D."
       title: "Proxy variables of the closeness between humans and wildlife associated with public interest in bird species in Japan"
       journal: "European Journal of Wildlife Research"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"
       doi: "https://doi.org/10.1007/s10344-023-01749-0"
     - authors: "Leong, C., Solomone, M., Shinjo, R., Tomojiri, D., Uchiyama, C., Yasumoto, J., & Razafindrabe, B."
       title: "An assessment of small island hydrological research activity conducted in the Oceania Region"
       journal: "Hydrological Sciences Journal"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"
       doi: "https://doi.org/10.1080/02626667.2023.2252406"
 
 - year: 2022
@@ -39,10 +57,16 @@
     - authors: "Tomojiri, D., Takaya, K., & Ise, T."
       title: "Temporal trends and spatial distribution of research topics in anthropogenic marine debris study: Topic modelling using latent Dirichlet allocation"
       journal: "Marine Pollution Bulletin"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"
       doi: "https://doi.org/10.1016/j.marpolbul.2022.113917"
     - authors: "Takaya, K., & Tomojiri, D."
       title: "Public interest in bird and congruence with seasonal observational data: A case study using Japanese Wikipedia Pageview data"
       journal: "Wildlife and Human Society"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"
       doi: "https://doi.org/10.20798/awhswhs.10.0_75"
 
 - year: 2021
@@ -50,6 +74,9 @@
     - authors: "Tomojiri, D., Musikasinthorn, P., & Iwata, A."
       title: "Utilization and economic importance of native and non-native freshwater fishes in the lowermost Chao Phraya River Basin, Thailand"
       journal: "Wildlife and Human Society"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"      
       doi: "https://doi.org/10.20798/awhswhs.9.0_35"
 
 - year: 2020
@@ -57,6 +84,9 @@
     - authors: "Sai, A., Furusawa, T., Othman, M.Y., Tomojiri, D., Zaini, W.F.Z.W., Tan, C.S.Y., & Norzilan, N.I.B.M."
       title: "Sociocultural factors affecting drive for muscularity among male college students in Malaysia"
       journal: "Heliyon"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"      
       doi: "https://doi.org/10.1016/j.heliyon.2020.e04414"
 
 - year: 2019
@@ -64,6 +94,9 @@
     - authors: "Tomojiri, D., Musikasinthorn, P., & Iwata, A."
       title: "Food habits of three non-native cichlid fishes in the lowermost Chao Phraya River basin, Thailand"
       journal: "Journal of Freshwater Ecology"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"
       doi: "https://doi.org/10.1080/02705060.2019.1585392"
 
 - year: 2018
@@ -71,4 +104,7 @@
     - authors: "Sai, A., Othman, M.Y., Zaini, W.F.Z.W., Tan, C.S.Y., Norzilan, N.I.B.M., Tomojiri, D., Furusawa, T."
       title: "Factors affecting body image perceptions of female college students in urban Malaysia"
       journal: "Obesity Medicine"
+      volume: "0"
+      issue: "0"
+      pages: "00–00"
       doi: "https://doi.org/10.1016/j.obmed.2018.06.004"

@@ -44,27 +44,15 @@
 }
 
 .publication-entry {
-  margin-bottom: 1.6em;
-}
-
-.publication-authors {
-  margin-bottom: 0.15em;
-}
-
-.publication-title {
-  margin-bottom: 0.2em;
-}
-
-.publication-journal-line {
-  margin-bottom: 0;
+  margin-bottom: 1.2em;
 }
 
 .journal {
   font-style: italic;
 }
 
-.publication-entry a {
-  word-break: break-word;
+.publication-entry strong {
+  font-weight: 700;
 }
 
 #copyright {

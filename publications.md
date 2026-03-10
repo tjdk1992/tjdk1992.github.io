@@ -20,29 +20,13 @@ permalink: /publications/
           | replace: "Tomojiri, D.", "<strong>Tomojiri, D.</strong>"
         %}
 
-        <div class="publication-entry">
-
-          <p class="publication-authors">
-            {{ authors }}
-          </p>
-
-          <p class="publication-title">
-            “{{ pub.title }}”
-          </p>
-
-          <p class="publication-journal-line">
-            <span class="journal">{{ pub.journal }}</span>
-
-            {% if pub.doi and pub.doi != "" %}
-              <br>
-              <a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">
-                {{ pub.doi }}
-              </a>
-            {% endif %}
-
-          </p>
-
-        </div>
+        <p class="publication-entry">
+          {{ authors }} ({{ group.year }}) {{ pub.title }}.
+          <span class="journal">{{ pub.journal }}</span>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.issue %}({{ pub.issue }}){% endif %}{% if pub.pages %}: {{ pub.pages }}{% endif %}.
+          {% if pub.doi and pub.doi != "" %}
+            <a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">LINK</a>
+          {% endif %}
+        </p>
 
       {% endfor %}
     </div>
