@@ -18,22 +18,12 @@
         {% include sidebar.html %}
       </aside>
 
-      <div id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="left-column" role="button" tabindex="0">
-        <div>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-
       <main id="main">
         <div id="main-in">
           {{ content }}
           {% include footer.html %}
         </div>
       </main>
-
-      <div id="overlay"></div>
     </div>
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>

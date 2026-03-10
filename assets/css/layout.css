@@ -10,11 +10,11 @@
 }
 
 #left-column {
+  position: relative;
   width: 100%;
   background: #fff;
   text-align: left;
   align-self: stretch;
-  min-height: 100%;
 }
 
 #global-head {
@@ -76,13 +76,6 @@
   padding-top: 30px;
 }
 
-#overlay {
-  display: none;
-  position: fixed;
-  background: rgba(0, 0, 0, 0.6);
-  inset: 0;
-}
-
 /* medium desktop */
 @media screen and (max-width: 1150px) {
   .total {
@@ -134,7 +127,6 @@
   }
 }
 
-/* mobile */
 @media screen and (max-width: 900px) {
   .total {
     display: block;
@@ -145,12 +137,7 @@
   #left-column {
     position: static;
     width: 100%;
-    height: auto;
-    min-height: 0;
     background: #fff;
-    transform: none;
-    transition: none;
-    overflow: visible;
   }
 
   #global-head {
@@ -174,21 +161,9 @@
   #main section {
     padding: 25px 25px 25px 25px;
   }
-
-  #nav-toggle {
-    display: none;
-  }
-
-  #overlay {
-    display: none !important;
-  }
 }
 
 @media screen and (max-width: 400px) {
-  #left-column {
-    width: 100%;
-  }
-
   #global-head {
     padding-left: 24px;
     padding-right: 14px;

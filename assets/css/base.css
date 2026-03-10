@@ -9,12 +9,6 @@ body {
   box-sizing: border-box;
 }
 
-:root {
-  --sidebar-width: 300px;
-  --sidebar-gap: 25px;
-  --sidebar-total: calc(var(--sidebar-width) + (var(--sidebar-gap) * 2));
-}
-
 body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
@@ -52,10 +46,4 @@ h2,
 h3 {
   color: rgb(50, 50, 50);
   margin-top: 0;
-}
-
-.total {
-  margin: 0 auto 0 auto;
-  max-width: 1300px;
-  position: relative;
 }
