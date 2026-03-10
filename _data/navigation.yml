@@ -1,0 +1,11 @@
+- label: "About"
+  url: "/"
+
+- label: "Research"
+  url: "/research/"
+
+- label: "Publications"
+  url: "/publications/"
+
+- label: "Contact"
+  url: "/contact/"

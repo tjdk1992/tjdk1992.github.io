@@ -1,0 +1,20 @@
+- year: 2026
+  entries:
+    - authors: "Tomojiri-Kadotani, D., et al."
+      title: "Example publication title for 2026"
+      journal: "Journal Name"
+      doi: "https://doi.org/10.0000/example-2026"
+
+- year: 2025
+  entries:
+    - authors: "Tomojiri-Kadotani, D., et al."
+      title: "Example publication title for 2025"
+      journal: "Journal Name"
+      doi: "https://doi.org/10.0000/example-2025"
+
+- year: 2024
+  entries:
+    - authors: "Tomojiri-Kadotani, D., et al."
+      title: "Example publication title for 2024"
+      journal: "Journal Name"
+      doi: ""

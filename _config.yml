@@ -1,0 +1,15 @@
+title: "Daiki Tomojiri"
+description: "Personal academic website of Daiki Tomojiri-Kadotani"
+theme: null
+markdown: kramdown
+
+plugins:
+  - jekyll-sitemap
+
+# GitHub Pages settings
+# If your site is https://username.github.io/, keep baseurl as ""
+# If your site is https://username.github.io/repo-name/, set baseurl to "/repo-name"
+url: "https://tjdk1992.github.io"
+baseurl: ""
+
+permalink: pretty

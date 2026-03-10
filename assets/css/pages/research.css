@@ -1,0 +1,9 @@
+.project-list .card {
+  margin-bottom: 1.25rem;
+}
+
+.project-meta {
+  color: var(--color-muted);
+  font-size: 0.96rem;
+  margin-bottom: 0.6rem;
+}

@@ -1,0 +1,49 @@
+<aside class="site-sidebar" id="site-sidebar">
+  <div class="sidebar-inner">
+    <div class="profile-block">
+      <img
+        class="profile-image"
+        src="{{ site.data.profile.profile_image | relative_url }}"
+        alt="{{ site.data.profile.name }} profile photo"
+      >
+
+      <h1 class="profile-name">{{ site.data.profile.name }}</h1>
+      <p class="profile-position">{{ site.data.profile.position }}</p>
+
+      <p class="profile-affiliation">{{ site.data.profile.affiliation_1 }}</p>
+      <p class="profile-affiliation">{{ site.data.profile.affiliation_2 }}</p>
+    </div>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <ul>
+        {% for item in site.data.navigation %}
+        <li>
+          <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="is-current"{% endif %}>
+            {{ item.label }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <div class="social-block">
+      <h2 class="sidebar-heading">Links</h2>
+      <ul class="social-list">
+        {% for item in site.data.social %}
+        <li>
+          <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+            {{ item.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="contact-block">
+      <h2 class="sidebar-heading">Contact</h2>
+      <p>
+        <a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+      </p>
+    </div>
+  </div>
+</aside>
