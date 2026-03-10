@@ -2,16 +2,13 @@
   display: grid;
   grid-template-columns: 355px minmax(0, 1fr);
   column-gap: 0;
-  align-items: start;
+  align-items: stretch;
   max-width: 1300px;
   margin: 0 auto;
   position: relative;
 }
 
 #left-column {
-  position: sticky;
-  top: 25px;
-  align-self: start;
   width: 355px;
   margin: 25px 0 0 25px;
   background: #fff;
