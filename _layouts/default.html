@@ -1,26 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     {% include head.html %}
   </head>
   <body>
-    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-sidebar">
-      ☰
-    </button>
+    <div class="total">
+      <header id="global-head">
+        <h1 id="Researcher">{{ site.data.profile.name }}</h1>
+        <p>
+          {{ site.data.profile.affiliation_1 }}
+          <br>and
+          <br>{{ site.data.profile.affiliation_2 }}
+        </p>
+      </header>
 
-    <div class="overlay" hidden></div>
+      <div id="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar" role="button" tabindex="0">
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
 
-    <div class="site-wrapper">
       {% include sidebar.html %}
 
-      <main class="site-main" id="main-content">
-        <div class="page-container">
+      <main id="main">
+        <div id="main-in">
           {{ content }}
+          {% include footer.html %}
         </div>
       </main>
-    </div>
 
-    {% include footer.html %}
+      <div id="overlay"></div>
+    </div>
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>

@@ -1,11 +1,24 @@
-- label: "About"
+- label: "Welcome"
   url: "/"
+  strong: true
+  external: false
+
+- label: "Publication"
+  url: "/publications/"
+  strong: false
+  external: false
+
+- label: "Current CV"
+  url: "/assets/files/cv/daiki-tomojiri-cv.pdf"
+  strong: false
+  external: true
 
 - label: "Research"
   url: "/research/"
-
-- label: "Publications"
-  url: "/publications/"
+  strong: false
+  external: false
 
 - label: "Contact"
   url: "/contact/"
+  strong: false
+  external: false
