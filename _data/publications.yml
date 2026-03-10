@@ -18,3 +18,38 @@
       title: "Example publication title for 2024"
       journal: "Journal Name"
       doi: ""
+      
+- year: 2023
+  entries:
+    - authors: "Tomojiri-Kadotani, D., et al."
+      title: "Example publication title for 2026"
+      journal: "Journal Name"
+      doi: "https://doi.org/10.0000/example-2026"
+
+- year: 2022
+  entries:
+    - authors: "Tomojiri-Kadotani, D., et al."
+      title: "Example publication title for 2025"
+      journal: "Journal Name"
+      doi: "https://doi.org/10.0000/example-2025"
+
+- year: 2021
+  entries:
+    - authors: "Tomojiri-Kadotani, D., et al."
+      title: "Example publication title for 2024"
+      journal: "Journal Name"
+      doi: ""
+      
+- year: 2020
+  entries:
+    - authors: "Tomojiri-Kadotani, D., et al."
+      title: "Example publication title for 2024"
+      journal: "Journal Name"
+      doi: ""
+      
+- year: 2019
+  entries:
+    - authors: "Tomojiri-Kadotani, D., et al."
+      title: "Example publication title for 2024"
+      journal: "Journal Name"
+      doi: ""
