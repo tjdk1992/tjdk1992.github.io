@@ -143,16 +143,14 @@
   }
 
   #left-column {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 270px;
-    height: 100%;
-    min-height: 100vh;
+    position: static;
+    width: 100%;
+    height: auto;
+    min-height: 0;
     background: #fff;
-    transition: .35s ease-in-out;
-    z-index: 300;
-    overflow-y: auto;
+    transform: none;
+    transition: none;
+    overflow: visible;
   }
 
   #global-head {
@@ -177,23 +175,18 @@
     padding: 25px 25px 25px 25px;
   }
 
-  .open #left-column {
-    transform: translate3d(-300px, 0, 0);
+  #nav-toggle {
+    display: none;
   }
 
   #overlay {
-    z-index: 200;
+    display: none !important;
   }
 }
 
 @media screen and (max-width: 400px) {
   #left-column {
-    right: -220px;
-    width: 220px;
-  }
-
-  .open #left-column {
-    transform: translate3d(-220px, 0, 0);
+    width: 100%;
   }
 
   #global-head {
