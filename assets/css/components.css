@@ -54,29 +54,36 @@
 
 .socialmedia p {
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 /* 左端 */
 .socialmedia p:nth-child(1) {
-  text-align: left;
+  justify-content: flex-start;
 }
 
 /* 中央 */
 .socialmedia p:nth-child(2),
 .socialmedia p:nth-child(3),
 .socialmedia p:nth-child(4) {
-  text-align: center;
+  justify-content: center;
 }
 
 /* 右端 */
 .socialmedia p:nth-child(5) {
-  text-align: right;
+  justify-content: flex-end;
 }
 
 .socialmedia a {
   color: rgb(50, 50, 50);
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.35em;
+  height: 1.35em;
+  line-height: 1;
 }
 
 .socialmedia a:visited {
@@ -84,9 +91,10 @@
 }
 
 .socialmedia i {
-  width: 1.25em;
+  width: 1.35em;
   text-align: center;
   display: inline-block;
+  line-height: 1;
 }
 
 /* figure component */
