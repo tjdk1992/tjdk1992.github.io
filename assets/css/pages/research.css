@@ -40,6 +40,7 @@
   margin-bottom: .7em;
 }
 
+/* default image rule kept for compatibility with older content */
 #main img {
   width: 270px;
   float: left;
@@ -48,7 +49,30 @@
   padding-top: 5px;
 }
 
-/* full-width photo styles for future research page images */
+/* full-width photo block for current and future research images */
+.research-figure {
+  width: 100%;
+  margin: 0 0 1em 0;
+}
+
+.research-figure img {
+  width: 100%;
+  display: block;
+  float: none;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+
+.research-figure figcaption {
+  width: 100%;
+  color: rgb(85, 85, 85);
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
 img.nature,
 img.culture,
 img.contact-photo,
@@ -67,6 +91,16 @@ img.research-photo {
   line-height: 1.5;
   margin-top: 0;
   margin-bottom: 0.9em;
+}
+
+.paperlink {
+  font-weight: 400;
+  color: orangered;
+  text-decoration: none;
+}
+
+.paperlink:hover {
+  text-decoration: underline;
 }
 
 #copyright {
@@ -114,6 +148,7 @@ img.research-photo {
     padding-top: 0;
   }
 
+  .research-figure figcaption,
   .imgcap {
     font-size: 12px;
   }

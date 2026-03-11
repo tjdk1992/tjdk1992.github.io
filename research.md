@@ -21,11 +21,12 @@ permalink: /research/
 <section>
   <h2>Market integration of invasive sailfin catfish</h2>
 
-  <p class="imgcap">
-    <img src="{{ '/assets/img/research/market_sold_suckermouth.jpg' | relative_url }}" class="research-photo" alt="Sailfin catfish sold in a local market in Can Tho City, Mekong Delta, Vietnam">
-    <br>
-    Sailfin catfish (Pterygoplichthys spp.) sold in a local market in Can Tho City, Mekong Delta, Vietnam.
-  </p>
+  <figure class="research-figure">
+    <img src="{{ '/assets/img/research/market_sold_suckermouth.jpg' | relative_url }}" alt="Sailfin catfish sold in a local market in Can Tho City, Mekong Delta, Vietnam">
+    <figcaption>
+      Sailfin catfish (Pterygoplichthys spp.) sold in a local market in Can Tho City, Mekong Delta, Vietnam.
+    </figcaption>
+  </figure>
 
   <p>
     Invasive fishes are increasingly incorporated into local food systems, yet the landscape contexts and market mechanisms underlying this process remain poorly understood. We investigated the market occurrence and economic position of sailfin catfish (Pterygoplichthys spp.) in Can Tho City, Mekong Delta, Vietnam. We surveyed 53 local retail markets in 2025, quantified sailfin catfish presence, and linked each market to surrounding land-use/land-cover (LULC) composition within a 1000-m radius.
@@ -49,6 +50,10 @@ permalink: /research/
 
   <p>
     These results indicate that invasive sailfin catfish are most strongly embedded in markets associated with rice-field landscapes and can function as a low-priced but profitable fishery commodity. The study highlights how invasive species can become integrated into food systems through interactions between landscape structure and market incentives in the city.
+  </p>
+
+  <p>
+    <a href="#" class="paperlink">LINK to paper</a>
   </p>
 </section>
 
