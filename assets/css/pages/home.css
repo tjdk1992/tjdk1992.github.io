@@ -84,15 +84,19 @@ img.rayong01 {
 }
 
 @media screen and (max-width: 900px) {
-  #main {
-    padding-top: 160px;
-  }
-
-  #main section {
-    padding: 12px 25px 12px 25px;
-  }
-
   #main-in {
-    padding-left: 0;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  #main .welcome,
+  #main section:first-child {
+    padding-top: 25px !important;
+    margin-top: 0 !important;
+    min-height: auto !important;
+  }
+
+  #main section:first-child > :first-child {
+    margin-top: 0 !important;
   }
 }
