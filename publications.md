@@ -12,15 +12,16 @@ permalink: /publications/
 
 <p>
 Only peer-reviewed papers published in scientific journals are recorded here.
-More detailed latest information on my achievement is available from the
-<a href="https://researchmap.jp/" target="_blank">researchmap</a>.
 </p>
 
-<p class="imgcap">
-<img src="{{ '/assets/img/publication/reservoir.jpg' | relative_url }}" class="nature" alt="Distributing reservoir, Rayong, Thailand">
-<br>
+<figure class="page-figure">
+<img src="{{ '/assets/img/publication/reservoir.jpg' | relative_url }}" alt="Reservoir">
+<figcaption>
 OLYMPUS E-M5 Mark-II with M.ZUIKO DIGITAL 12–50 mm @ Distributing reservoir, Rayong, Thailand
-</p>
+</figcaption>
+</figure>
+
+</section>
 
 {% for group in site.data.publications %}
   <div class="publication-year-block">

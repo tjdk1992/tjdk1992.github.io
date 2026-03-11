@@ -7,14 +7,17 @@ permalink: /contact/
 ---
 
 <section class="welcome">
-  <h1>Contact</h1>
 
-  <p class="imgcap">
-    <img src="{{ '/assets/img/contact/yoron_contact.jpg' | relative_url }}" class="nature" alt="Agricultural land use and sea, Yoron-jima Island, Japan">
-    <br>OLYMPUS E-M5 Mark-II with Google Pixel 3 @ Agricultural land use and sea, Yoron-jima Island, Japan
-  </p>
+<h1>Contact</h1>
 
-  <h2>Current Contact Address</h2>
+<figure class="page-figure">
+<img src="{{ '/assets/img/contact/yoron_contact.jpg' | relative_url }}" alt="Yoron Island">
+<figcaption>
+OLYMPUS E-M5 Mark-II with Google Pixel 3 @ Agricultural land use and sea, Yoron-jima Island, Japan
+</figcaption>
+</figure>
+
+<h2>Current Contact Address</h2>
 
   <p>
     Research Institute for Humanity and Nature<br>

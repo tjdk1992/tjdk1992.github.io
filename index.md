@@ -6,18 +6,22 @@ page_css: /assets/css/pages/home.css
 ---
 
 <section class="welcome">
-  <h1>Welcome</h1>
-  <p class="imgcap">
-    <img src="{{ site.data.profile.profile_image | relative_url }}" class="rayong01" alt="Daiki Tomojiri at the artificial reservoir, Rayong Province, Thailand">
-    <br>iPhone 6 @ the artificial reservoir, Rayong Province, Thailand
-  </p>
-  <p>
-    I am a postdoctoral researcher at the
-    <a href="https://www.chikyu.ac.jp/rihn/activities/project/project/12/" target="_blank" rel="noopener noreferrer">Research Institute for Humanity and Nature</a>
-    (Project Researcher) and at the
-    <a href="https://en.kyoto.cseas.kyoto-u.ac.jp/" target="_blank" rel="noopener noreferrer">Center for Southeast Asian Area Studies in Kyoto University</a>
-    (Affiliate Researcher)
-  </p>
+<h1>Welcome</h1>
+
+<figure class="page-figure">
+<img src="{{ site.data.profile.profile_image | relative_url }}" alt="Daiki Tomojiri">
+<figcaption>
+iPhone 6 @ the artificial reservoir, Rayong Province, Thailand
+</figcaption>
+</figure>
+
+<p>
+I am a postdoctoral researcher at the
+<a href="https://www.chikyu.ac.jp/rihn/activities/project/project/12/" target="_blank">Research Institute for Humanity and Nature</a>
+(Project Researcher) and at the
+<a href="https://en.kyoto.cseas.kyoto-u.ac.jp/" target="_blank">Center for Southeast Asian Area Studies in Kyoto University</a>
+(Affiliate Researcher)
+</p>
 </section>
 
 <section class="myres">
