@@ -43,7 +43,7 @@
 /* navigation */
 
 #sidebar {
-  padding: 30px 55px 20px 55px;
+  padding: 30px 55px 0px 55px;
   margin-top: auto;
   min-height: 100vh;
   display: flex;
