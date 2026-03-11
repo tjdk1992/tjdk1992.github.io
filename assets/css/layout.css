@@ -23,7 +23,7 @@
   flex-direction: column;
 
   position: sticky;
-  top: 120px;
+  top: 0px;
 
   height: fit-content;
 }
