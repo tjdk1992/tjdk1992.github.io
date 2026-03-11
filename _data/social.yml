@@ -2,10 +2,10 @@
   url: "https://www.linkedin.com/in/daiki-tomojiri/"
   icon: "fab fa-linkedin fa-fw fa-lg"
 
-- name: "Twitter"
-  url: "https://twitter.com/DTomojiri"
-  icon: "fab fa-twitter fa-fw fa-lg"
-
+- name: "ORCID"
+  url: "https://orcid.org/0000-0002-1041-7737"
+  icon: "ai ai-orcid"
+  
 - name: "Instagram"
   url: "https://www.instagram.com/tjdk1992/"
   icon: "fab fa-instagram fa-fw fa-lg"
