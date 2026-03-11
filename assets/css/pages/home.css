@@ -84,9 +84,21 @@ img.rayong01 {
 }
 
 @media screen and (max-width: 900px) {
+  #main {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
   #main-in {
+    padding-left: 0 !important;
     padding-top: 0 !important;
     margin-top: 0 !important;
+  }
+
+  #main section {
+    padding: 25px 16px !important;
   }
 
   #main .welcome,
@@ -98,5 +110,28 @@ img.rayong01 {
 
   #main section:first-child > :first-child {
     margin-top: 0 !important;
+  }
+
+  .welcome,
+  .welcome p,
+  .welcome figure,
+  .welcome figcaption,
+  .welcome img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .welcome p,
+  .welcome figcaption {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #main h1 {
+    font-size: 2.4em;
+  }
+
+  #main h2 {
+    font-size: 160%;
   }
 }

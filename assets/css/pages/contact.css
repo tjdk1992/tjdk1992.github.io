@@ -87,14 +87,37 @@ iframe {
 
 @media screen and (max-width: 900px) {
   #main {
-    padding-top: 160px;
-  }
-
-  #main section {
-    padding: 25px 25px 25px 25px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   #main-in {
-    padding-left: 0;
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  #main section {
+    padding: 25px 16px !important;
+    margin-top: 0 !important;
+    min-height: auto !important;
+  }
+
+  #main section:first-child {
+    padding-top: 25px !important;
+  }
+
+  #main section:first-child > :first-child {
+    margin-top: 0 !important;
+  }
+
+  #main h1 {
+    font-size: 2.4em;
+  }
+
+  #main h2 {
+    font-size: 160%;
   }
 }
