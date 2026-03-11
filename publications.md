@@ -12,6 +12,8 @@ permalink: /publications/
 
 <p>
 Only peer-reviewed papers published in scientific journals are recorded here.
+More detailed latest information on my achievement is available from the
+<a href="https://researchmap.jp/" target="_blank">researchmap</a>.
 </p>
 
 <figure class="page-figure">
@@ -21,27 +23,29 @@ OLYMPUS E-M5 Mark-II with M.ZUIKO DIGITAL 12–50 mm @ Distributing reservoir, R
 </figcaption>
 </figure>
 
-</section>
-
 {% for group in site.data.publications %}
-  <div class="publication-year-block">
-    <h2>{{ group.year }}</h2>
+<div class="publication-year-block">
 
-    {% for pub in group.entries %}
-      {% assign authors = pub.authors
-        | replace: "Tomojiri-Kadotani, D.", "<strong>Tomojiri-Kadotani, D.</strong>"
-        | replace: "Tomojiri, D.", "<strong>Tomojiri, D.</strong>"
-      %}
+<h2>{{ group.year }}</h2>
 
-      <p class="publication-entry">
-        {{ authors }} ({{ group.year }}). {{ pub.title }}.
-        <span class="journal">{{ pub.journal }}</span>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.issue %}({{ pub.issue }}){% endif %}{% if pub.pages %}: {{ pub.pages }}{% endif %}.
-        {% if pub.doi and pub.doi != "" %}
-          <a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">LINK</a>
-        {% endif %}
-      </p>
-    {% endfor %}
-  </div>
+{% for pub in group.entries %}
+
+{% assign authors = pub.authors
+| replace: "Tomojiri-Kadotani, D.", "<strong>Tomojiri-Kadotani, D.</strong>"
+| replace: "Tomojiri, D.", "<strong>Tomojiri, D.</strong>"
+%}
+
+<p class="publication-entry">
+{{ authors }} ({{ group.year }}). {{ pub.title }}.
+<span class="journal">{{ pub.journal }}</span>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.issue %}({{ pub.issue }}){% endif %}{% if pub.pages %}: {{ pub.pages }}{% endif %}.
+{% if pub.doi and pub.doi != "" %}
+<a href="{{ pub.doi }}" target="_blank">LINK</a>
+{% endif %}
+</p>
+
+{% endfor %}
+
+</div>
 {% endfor %}
 
 </section>
