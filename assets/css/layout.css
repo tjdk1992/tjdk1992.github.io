@@ -56,7 +56,7 @@
 /* mobile */
 @media screen and (max-width: 900px) {
   body {
-    overflow: auto;
+    overflow-x: hidden;
   }
 
   .total {
@@ -68,21 +68,100 @@
   #left-column {
     width: 100%;
     height: auto;
-    display: block;
-    overflow: visible;
+    background: transparent;
   }
 
   #global-head {
+    width: 100%;
     padding: 25px 18px 15px 25px;
+    background: rgba(255,255,255,0.96);
+    position: relative;
+    z-index: 100;
   }
 
+  /* sidebar は通常は画面外に隠す */
   #sidebar {
-    padding: 10px 18px 25px 25px;
+    position: fixed;
+    top: 0;
+    right: -270px;
+    width: 270px;
+    height: 100vh;
+    padding: 90px 20px 25px 25px;
+    background: #fff;
+    overflow-y: auto;
+    transition: right .35s ease-in-out;
+    z-index: 300;
+    margin-top: 0;
+  }
+
+  /* 開いたとき */
+  body.open #sidebar {
+    right: 0;
   }
 
   #main {
     width: 100%;
     height: auto;
     overflow: visible;
+  }
+
+  #main section {
+    padding: 25px;
+  }
+
+  /* ハンバーガーボタン */
+  #nav-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 6px;
+    z-index: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  #nav-toggle > div {
+    width: 22px;
+  }
+
+  #nav-toggle span {
+    display: block;
+    height: 2px;
+    margin: 5px 0;
+    background: rgb(50, 50, 50);
+    transition: .25s ease-in-out;
+  }
+
+  body.open #nav-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  body.open #nav-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  body.open #nav-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* 背景オーバーレイ */
+  #overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition: .25s ease-in-out;
+    z-index: 250;
+  }
+
+  body.open #overlay {
+    opacity: 1;
+    visibility: visible;
   }
 }
