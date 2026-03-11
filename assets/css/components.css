@@ -48,7 +48,8 @@
 .socialmedia {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  width: 100%;
+  width: calc(100% + 85px);
+  margin-left: -55px;
 }
 
 .socialmedia p {
