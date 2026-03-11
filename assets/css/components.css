@@ -1,10 +1,5 @@
 #global-head,
 #sidebar {
-  position: fixed;
-  width: 300px;
-  box-sizing: border-box;
-  padding-left: 55px;
-  padding-right: 30px;
   text-align: left;
   background: #fff;
 }
@@ -12,7 +7,6 @@
 #global-head {
   font-size: 14px;
   color: rgb(50, 50, 50);
-  padding-top: 60px;
   z-index: 100;
 }
 
@@ -22,13 +16,10 @@
   line-height: 18px;
 }
 
+/* sidebar */
+
 #sidebar {
-  top: 25px;
-  left: 50%;
-  transform: translateX(-650px);
   font-size: 15px;
-  padding-top: 255px;
-  height: calc(100vh - 25px);
 }
 
 #global-nav ul {
@@ -56,6 +47,7 @@
 
 .socialmedia {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .socialmedia p {
@@ -93,60 +85,4 @@
   line-height: 1.5;
   margin-top: 4px;
   margin-bottom: 0.9em;
-}
-
-/* responsive */
-
-@media screen and (max-width: 1150px) {
-
-  #sidebar {
-    top: 10px;
-    left: 10px;
-    transform: none;
-    padding-top: 250px;
-    padding-left: 50px;
-    width: 300px;
-    height: calc(100vh - 10px);
-    position: fixed;
-    background: #fff;
-  }
-
-}
-
-@media screen and (max-width: 1050px) {
-
-  #sidebar {
-    top: 0;
-    left: 0;
-    transform: none;
-    padding-top: 230px;
-    padding-left: 40px;
-    width: 300px;
-    height: 100vh;
-    position: fixed;
-    background: #fff;
-  }
-
-}
-
-@media screen and (max-width: 900px) {
-
-  #global-head {
-    width: 100%;
-    padding: 25px;
-    background: rgba(255,255,255);
-  }
-
-  #sidebar {
-    position: fixed;
-    padding-top: 100px;
-    right: -300px;
-    top: 0;
-    height: 100%;
-    width: 270px;
-    background: #fff;
-    transition: .35s ease-in-out;
-    z-index: 300;
-  }
-
 }

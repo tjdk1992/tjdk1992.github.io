@@ -13,35 +13,37 @@
   gap: 0;
 }
 
-/* left column: fixed visually, no scroll */
+/* left column */
 #left-column {
-  flex: 0 0 375px;
-  width: 375px;
+  flex: 0 0 300px;
+  width: 300px;
   background: #ffffff;
   height: calc(100vh - 40px);
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /* profile block */
 #global-head {
-  padding: 40px 30px 30px 50px;
+  padding: 55px 30px 20px 55px;
   margin: 0;
+  flex: 0 0 auto;
 }
 
 #global-head p {
-  font-size: 12px;
-  line-height: 1.6;
-  color: rgb(85, 85, 85);
   margin-bottom: 0;
 }
 
 /* nav block */
 #sidebar {
-  padding: 25px 30px 40px 50px;
+  padding: 30px 30px 40px 55px;
   margin: 0;
+  flex: 1 1 auto;
 }
 
-/* right column: only this scrolls */
+/* right column */
 #main {
   flex: 1 1 auto;
   min-width: 0;
@@ -72,17 +74,17 @@
   }
 
   #left-column {
-    flex: 0 0 340px;
-    width: 340px;
+    flex: 0 0 300px;
+    width: 300px;
     height: calc(100vh - 24px);
   }
 
   #global-head {
-    padding: 32px 24px 24px 40px;
+    padding: 40px 24px 18px 45px;
   }
 
   #sidebar {
-    padding: 20px 24px 32px 40px;
+    padding: 24px 24px 30px 45px;
   }
 
   #main {
@@ -100,17 +102,17 @@
   }
 
   #left-column {
-    flex: 0 0 300px;
-    width: 300px;
+    flex: 0 0 280px;
+    width: 280px;
     height: 100vh;
   }
 
   #global-head {
-    padding: 24px 20px 22px 32px;
+    padding: 28px 20px 16px 36px;
   }
 
   #sidebar {
-    padding: 18px 20px 28px 32px;
+    padding: 20px 20px 28px 36px;
   }
 
   #main {
@@ -122,7 +124,7 @@
   }
 }
 
-/* mobile: stack normally */
+/* mobile */
 @media screen and (max-width: 900px) {
   body {
     overflow: auto;
@@ -141,15 +143,17 @@
   #left-column {
     width: 100%;
     height: auto;
+    display: block;
+    overflow: visible;
   }
 
   #global-head {
-    padding: 25px 18px 20px 32px;
+    padding: 25px 18px 15px 25px;
   }
 
   #sidebar {
-    padding: 10px 18px 25px 32px;
-    margin-top: 45px;
+    padding: 10px 18px 25px 25px;
+    margin-top: 0;
   }
 
   #main {
@@ -165,12 +169,12 @@
 
 @media screen and (max-width: 400px) {
   #global-head {
-    padding-left: 24px;
+    padding-left: 20px;
     padding-right: 14px;
   }
 
   #sidebar {
-    padding-left: 24px;
+    padding-left: 20px;
     padding-right: 14px;
   }
 }
