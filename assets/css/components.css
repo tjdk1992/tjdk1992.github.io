@@ -101,6 +101,10 @@
   font-size: 1.35em;
 }
 
+.socialmedia p:first-child i.ai-orcid {
+  transform: translateX(-3px);
+}
+
 /* figure component */
 
 .page-figure,
