@@ -34,8 +34,12 @@ img.rayong01 {
 }
 
 #main section {
-  background-color: rgb(245, 245, 245);
-  padding: 12px 100px 12px 100px;
+  padding: 50px 100px 25px 100px;
+}
+
+#main section h1,
+#main section h2 {
+  margin-top: 0;
 }
 
 #main .welcome {
