@@ -7,29 +7,51 @@ permalink: /publications/
 ---
 
 <section class="welcome">
-  <h1>Publication</h1>
 
-  {% for group in site.data.publications %}
-    <div class="publication-year-block">
-      <h2>{{ group.year }}</h2>
+<h1>Publication</h1>
 
-      {% for pub in group.entries %}
+<p>
+Only peer-reviewed papers published in scientific journals are recorded here.
+More detailed latest information on my achievement is available from the
+<a href="https://researchmap.jp/" target="_blank">researchmap</a>.
+</p>
 
-        {% assign authors = pub.authors
-          | replace: "Tomojiri-Kadotani, D.", "<strong>Tomojiri-Kadotani, D.</strong>"
-          | replace: "Tomojiri, D.", "<strong>Tomojiri, D.</strong>"
-        %}
 
-        <p class="publication-entry">
-          {{ authors }} ({{ group.year }}) {{ pub.title }}.
-          <span class="journal">{{ pub.journal }}</span>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.issue %}({{ pub.issue }}){% endif %}{% if pub.pages %}: {{ pub.pages }}{% endif %}.
-          {% if pub.doi and pub.doi != "" %}
-            <a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">LINK</a>
-          {% endif %}
-        </p>
+<p class="imgcap">
+<img src="{{ '/assets/img/publication/reservoir.jpg' | relative_url }}" class="nature">
+<br>
+OLYMPUS E-M5 Mark-II with M.ZUIKO DIGITAL 12–50 mm @ Distributing reservoir, Rayong, Thailand
+</p>
 
-      {% endfor %}
-    </div>
-  {% endfor %}
+
+{% for group in site.data.publications %}
+
+<h2>{{ group.year }}</h2>
+
+{% for pub in group.entries %}
+
+{% assign authors = pub.authors
+  | replace: "Tomojiri-Kadotani, D.", "<strong>Tomojiri-Kadotani, D.</strong>"
+  | replace: "Tomojiri, D.", "<strong>Tomojiri, D.</strong>"
+%}
+
+<p class="publication-entry">
+
+{{ authors }} ({{ group.year }}).
+{{ pub.title }}.
+
+<i>{{ pub.journal }}</i>
+{% if pub.volume %} {{ pub.volume }}{% endif %}
+{% if pub.issue %}({{ pub.issue }}){% endif %}
+{% if pub.pages %}: {{ pub.pages }}{% endif %}.
+
+{% if pub.doi and pub.doi != "" %}
+<a href="{{ pub.doi }}" target="_blank">LINK</a>
+{% endif %}
+
+</p>
+
+{% endfor %}
+{% endfor %}
 
 </section>
