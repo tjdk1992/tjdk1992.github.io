@@ -45,18 +45,24 @@ permalink: /research/
   <div class="key-papers">
     <h3>Key papers</h3>
     <ul>
-      <li>
-        <strong>Tomojiri, D.</strong>, Musikasinthorn, P., &amp; Iwata, A. (2021).
-        Utilization and economic importance of native and non-native freshwater fishes in the lowermost Chao Phraya River Basin, Thailand.
-        <em>Wildlife and Human Society</em>.
-        <a href="https://doi.org/10.20798/awhswhs.9.0_35" target="_blank" rel="noopener noreferrer">LINK</a>
-      </li>
-      <li>
-        <strong>Tomojiri, D.</strong>, Musikasinthorn, P., &amp; Iwata, A. (2019).
-        Food habits of three non-native cichlid fishes in the lowermost Chao Phraya River basin, Thailand.
-        <em>Journal of Freshwater Ecology</em>.
-        <a href="https://doi.org/10.1080/02705060.2019.1585392" target="_blank" rel="noopener noreferrer">LINK</a>
-      </li>
+      {% assign target_dois = "https://doi.org/10.20798/awhswhs.9.0_35|https://doi.org/10.1080/02705060.2019.1585392" | split: "|" %}
+      {% for group in site.data.publications %}
+        {% for pub in group.entries %}
+          {% if target_dois contains pub.doi %}
+            {% assign authors = pub.authors
+              | replace: "Tomojiri-Kadotani, D.", "<strong>Tomojiri-Kadotani, D.</strong>"
+              | replace: "Tomojiri, D.", "<strong>Tomojiri, D.</strong>"
+            %}
+            <li>
+              {{ authors }} ({{ group.year }}). {{ pub.title }}.
+              <em>{{ pub.journal }}</em>.
+              {% if pub.doi and pub.doi != "" %}
+                <a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">LINK</a>
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     </ul>
   </div>
 </section>
@@ -77,9 +83,7 @@ permalink: /research/
   <div class="key-papers">
     <h3>Key papers</h3>
     <ul>
-      <li>
-        Add key eDNA-related papers here.
-      </li>
+      <li>Add key eDNA-related papers here.</li>
     </ul>
   </div>
 </section>
@@ -100,9 +104,7 @@ permalink: /research/
   <div class="key-papers">
     <h3>Key papers</h3>
     <ul>
-      <li>
-        Add key coral reef papers here.
-      </li>
+      <li>Add key coral reef papers here.</li>
     </ul>
   </div>
 </section>
@@ -123,18 +125,24 @@ permalink: /research/
   <div class="key-papers">
     <h3>Key papers</h3>
     <ul>
-      <li>
-        <strong>Tomojiri, D.</strong>, Takaya, K., &amp; Ise, T. (2022).
-        Temporal trends and spatial distribution of research topics in anthropogenic marine debris study: Topic modelling using latent Dirichlet allocation.
-        <em>Marine Pollution Bulletin</em>.
-        <a href="https://doi.org/10.1016/j.marpolbul.2022.113917" target="_blank" rel="noopener noreferrer">LINK</a>
-      </li>
-      <li>
-        Takaya, K., &amp; <strong>Tomojiri, D.</strong> (2023).
-        Proxy variables of the closeness between humans and wildlife associated with public interest in bird species in Japan.
-        <em>European Journal of Wildlife Research</em>.
-        <a href="https://doi.org/10.1007/s10344-023-01749-0" target="_blank" rel="noopener noreferrer">LINK</a>
-      </li>
+      {% assign target_dois = "https://doi.org/10.1016/j.marpolbul.2022.113917|https://doi.org/10.1007/s10344-023-01749-0" | split: "|" %}
+      {% for group in site.data.publications %}
+        {% for pub in group.entries %}
+          {% if target_dois contains pub.doi %}
+            {% assign authors = pub.authors
+              | replace: "Tomojiri-Kadotani, D.", "<strong>Tomojiri-Kadotani, D.</strong>"
+              | replace: "Tomojiri, D.", "<strong>Tomojiri, D.</strong>"
+            %}
+            <li>
+              {{ authors }} ({{ group.year }}). {{ pub.title }}.
+              <em>{{ pub.journal }}</em>.
+              {% if pub.doi and pub.doi != "" %}
+                <a href="{{ pub.doi }}" target="_blank" rel="noopener noreferrer">LINK</a>
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     </ul>
   </div>
 </section>
