@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding: 20px;
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 0;
 }
 
@@ -22,9 +22,9 @@
   flex-direction: column;
 
   position: sticky;
-  top: 0px;
+  top: 20px;
 
-  min-height: calc(100vh - 40px);
+  height: calc(100vh - 40px);
   align-self: flex-start;
 }
 
@@ -43,9 +43,8 @@
 /* navigation */
 
 #sidebar {
-  padding: 30px 55px 0px 55px;
-  margin-top: auto;
-  min-height: 100vh;
+  padding: 30px 55px 20px 55px;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
 }
