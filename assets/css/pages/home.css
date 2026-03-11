@@ -12,6 +12,8 @@
 #main p {
   margin-bottom: 1em;
   line-height: 1.9;
+  letter-spacing: 0.01em;
+  font-weight: 300;
   color: rgb(50, 50, 50);
 }
 
@@ -47,12 +49,14 @@ img.rayong01 {
 #main h1 {
   color: rgb(50, 50, 50);
   font-size: 3em;
+  font-weight: 400;
   margin-bottom: .7em;
 }
 
 #main h2 {
   color: rgb(50, 50, 50);
   font-size: 200%;
+  font-weight: 400;
   margin-top: .5em;
   margin-bottom: .5em;
 }
