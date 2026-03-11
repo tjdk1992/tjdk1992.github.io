@@ -22,10 +22,6 @@
   padding: 25px 100px 25px 100px;
 }
 
-#main section:first-child {
-  margin-top: 20px;
-}
-
 #main .welcome {
   padding-top: 30px;
 }
@@ -111,7 +107,6 @@ iframe {
 
   #main section:first-child {
     padding-top: 25px !important;
-    margin-top: 0 !important;
   }
 
   #main section:first-child > :first-child {
