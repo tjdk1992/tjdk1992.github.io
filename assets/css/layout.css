@@ -24,7 +24,7 @@
   position: sticky;
   top: 20px;
 
-  height: calc(100vh - 35px);
+  height: calc(100vh - 5px);
   align-self: flex-start;
 }
 
