@@ -10,6 +10,10 @@
   z-index: 100;
 }
 
+#global-head h1 {
+  font-weight: 400;
+}
+
 #global-head p {
   font-size: 12px;
   color: rgb(85, 85, 85);
