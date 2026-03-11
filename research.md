@@ -21,25 +21,27 @@ permalink: /research/
 <section class="research-topic">
   <h2>Market integration of invasive sailfin catfish</h2>
 
-  <figure class="research-figure">
-    <img src="{{ '/assets/img/research/market_sold_suckermouth.jpg' | relative_url }}" alt="Sailfin catfish sold in a local market in Can Tho City, Mekong Delta, Vietnam">
-    <figcaption>
-      Sailfin catfish (Pterygoplichthys spp.) sold in a local market in Can Tho City, Mekong Delta, Vietnam.
-    </figcaption>
-  </figure>
+  <div class="research-lead">
+    <figure class="research-figure">
+      <img src="{{ '/assets/img/research/market_sold_suckermouth.jpg' | relative_url }}" alt="Sailfin catfish sold in a local market in Can Tho City, Mekong Delta, Vietnam">
+      <figcaption>
+        Sailfin catfish (Pterygoplichthys spp.) sold in a local market in Can Tho City, Mekong Delta, Vietnam.
+      </figcaption>
+    </figure>
 
-  <div class="research-description">
-    <p>
-      Invasive fishes are increasingly incorporated into local food systems, yet the landscape contexts and market mechanisms underlying this process remain poorly understood. We investigated the market occurrence and economic position of sailfin catfish (Pterygoplichthys spp.) in Can Tho City, Mekong Delta, Vietnam.
-    </p>
+    <div class="research-description">
+      <p>
+        Invasive fishes are increasingly incorporated into local food systems, yet the landscape contexts and market mechanisms underlying this process remain poorly understood. We investigated the market occurrence and economic position of sailfin catfish (Pterygoplichthys spp.) in Can Tho City, Mekong Delta, Vietnam.
+      </p>
 
-    <p>
-      We surveyed 53 local retail markets in 2025, quantified sailfin catfish presence, and linked each market to surrounding land-use/land-cover (LULC) composition within a 1000-m radius. The study highlights how invasive species can become integrated into food systems through interactions between landscape structure and market incentives.
-    </p>
+      <p>
+        We surveyed 53 local retail markets in 2025, quantified sailfin catfish presence, and linked each market to surrounding land-use/land-cover (LULC) composition within a 1000-m radius. The study highlights how invasive species can become integrated into food systems through interactions between landscape structure and market incentives.
+      </p>
 
-    <p>
-      <a href="#" class="paperlink">LINK to paper</a>
-    </p>
+      <p>
+        <a href="#" class="paperlink">LINK to paper</a>
+      </p>
+    </div>
   </div>
 
   <div class="key-papers">
