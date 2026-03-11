@@ -43,17 +43,16 @@
   text-decoration: underline;
 }
 
-/* social */
+/* social icons */
 
 .socialmedia {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  width: calc(100% + 85px);
-  margin-left: -55px;
+  width: 100%;
+  margin-top: 25px;
 }
 
 .socialmedia p {
-  padding-top: 25px;
   margin: 0;
 }
 
@@ -62,7 +61,7 @@
   text-align: left;
 }
 
-/* 中央3つ */
+/* 中央 */
 .socialmedia p:nth-child(2),
 .socialmedia p:nth-child(3),
 .socialmedia p:nth-child(4) {
@@ -75,8 +74,9 @@
 }
 
 .socialmedia a {
-  display: inline-block;
   color: rgb(50, 50, 50);
+  text-decoration: none;
+  display: inline-block;
 }
 
 .socialmedia a:visited {
