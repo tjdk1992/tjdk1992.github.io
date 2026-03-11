@@ -11,7 +11,8 @@
 }
 
 #global-head h1 {
-  font-weight: 200%;
+  font-weight: 400;
+  font-size: 200%;
 }
 
 #global-head p {
