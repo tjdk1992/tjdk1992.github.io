@@ -3,15 +3,18 @@
     <ul>
       {% for item in site.data.navigation %}
         <li>
+          {% assign is_current = page.url == item.url or page.url contains item.url %}
+
           {% if item.external %}
             <a href="{{ item.url | relative_url }}" target="_blank" rel="noopener noreferrer">
-              {% if item.strong %}<strong>{{ item.label }}</strong>{% else %}{{ item.label }}{% endif %}
+              {% if is_current %}<strong>{{ item.label }}</strong>{% else %}{{ item.label }}{% endif %}
             </a>
           {% else %}
             <a href="{{ item.url | relative_url }}">
-              {% if item.strong %}<strong>{{ item.label }}</strong>{% else %}{{ item.label }}{% endif %}
+              {% if is_current %}<strong>{{ item.label }}</strong>{% else %}{{ item.label }}{% endif %}
             </a>
           {% endif %}
+
         </li>
       {% endfor %}
     </ul>
