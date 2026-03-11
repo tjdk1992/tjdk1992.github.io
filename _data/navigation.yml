@@ -1,6 +1,6 @@
 - label: "Welcome"
   url: "/"
-  strong: true
+  strong: false
   external: false
 
 - label: "Publication"
