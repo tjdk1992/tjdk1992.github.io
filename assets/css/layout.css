@@ -82,7 +82,7 @@
   #global-head {
     width: 100%;
     padding: 25px 18px 15px 25px;
-    background: rgba(255,255,255,0.96);
+    background: rgba(255, 255, 255, 0.96);
     position: relative;
     z-index: 100;
   }
@@ -98,7 +98,7 @@
     margin: 0;
     background: #fff;
     overflow-y: auto;
-    transition: right .35s ease-in-out;
+    transition: right 0.35s ease-in-out;
     z-index: 300;
     display: block;
     flex: none;
@@ -114,8 +114,15 @@
     overflow: visible;
   }
 
+  #main-in {
+    width: 100%;
+    max-width: 640px;
+    min-width: 0;
+    margin: 0 auto;
+  }
+
   #main section {
-    padding: 25px;
+    padding: 25px 16px;
   }
 
   #nav-toggle {
@@ -124,7 +131,7 @@
     right: 16px;
     width: 44px;
     height: 44px;
-    background: rgba(255,255,255,0.95);
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 6px;
     z-index: 400;
     display: flex;
@@ -142,7 +149,7 @@
     height: 2px;
     margin: 5px 0;
     background: rgb(50, 50, 50);
-    transition: .25s ease-in-out;
+    transition: 0.25s ease-in-out;
   }
 
   body.open #nav-toggle span:nth-child(1) {
@@ -161,10 +168,10 @@
     display: block;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.25);
+    background: rgba(0, 0, 0, 0.25);
     opacity: 0;
     visibility: hidden;
-    transition: .25s ease-in-out;
+    transition: 0.25s ease-in-out;
     z-index: 250;
   }
 
