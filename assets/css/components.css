@@ -46,29 +46,50 @@
 /* social icons */
 
 .socialmedia {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   width: 100%;
   margin-top: 25px;
 }
 
 .socialmedia p {
   margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* 左端のアイコンの左端を揃える */
+.socialmedia p:nth-child(1) {
+  justify-content: flex-start;
+}
+
+/* 中央3つ */
+.socialmedia p:nth-child(2),
+.socialmedia p:nth-child(3),
+.socialmedia p:nth-child(4) {
+  justify-content: center;
+}
+
+/* 右端のアイコンの右端を揃える */
+.socialmedia p:nth-child(5) {
+  justify-content: flex-end;
 }
 
 .socialmedia a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.6em;
-  height: 1.6em;
   color: rgb(50, 50, 50);
   text-decoration: none;
+  display: inline-block;
+  line-height: 1;
 }
 
 .socialmedia a:visited {
   color: rgb(50, 50, 50);
+}
+
+.socialmedia i {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
 }
 
 /* figure component */
