@@ -47,14 +47,17 @@
 
 .socialmedia {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 18px;
 }
 
 .socialmedia p {
-  padding-right: 25px;
+  padding-right: 0;
   padding-top: 25px;
   margin-top: 0;
   margin-bottom: 0;
+  flex: 0 0 auto;
 }
 
 .socialmedia a {
