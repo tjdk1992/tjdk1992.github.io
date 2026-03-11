@@ -11,45 +11,49 @@
 
 #main p {
   margin-bottom: 1em;
-  line-height: 1.9;
-  color: rgb(50, 50, 50);
-  font-weight: 300;
+  line-height: 2.0;
   letter-spacing: 0.01em;
+  font-weight: 300;
+  color: rgb(50, 50, 50);
+}
+
+#main a {
+  color: orangered;
+  text-decoration: none;
+}
+
+#main a:visited {
+  color: orangered;
+  text-decoration: none;
 }
 
 #main section {
   background-color: rgb(245, 245, 245);
   padding: 25px 100px 25px 100px;
-}
-
-#main .welcome {
-  padding-top: 30px;
+  margin-bottom: 30px;
 }
 
 #main h1 {
   color: rgb(50, 50, 50);
   font-size: 3em;
-  font-weight: 400;
   margin-bottom: .7em;
+  font-weight: 400;
 }
 
 #main h2 {
   color: rgb(50, 50, 50);
-  font-size: 170%;
-  font-weight: 400;
+  font-size: 200%;
   margin-bottom: .7em;
+  font-weight: 400;
 }
 
-/* default image rule kept for compatibility with older content */
-#main img {
-  width: 270px;
-  float: left;
-  text-align: right;
-  padding-right: 5px;
-  padding-top: 5px;
+
+/* Research topic card */
+
+.research-topic {
+  margin-bottom: 2.5em;
 }
 
-/* full-width photo block for current and future research images */
 .research-figure {
   width: 100%;
   margin: 0 0 1em 0;
@@ -58,42 +62,23 @@
 .research-figure img {
   width: 100%;
   display: block;
-  float: none;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 0;
+  border-radius: 4px;
 }
 
 .research-figure figcaption {
-  width: 100%;
-  color: rgb(85, 85, 85);
   font-size: 12px;
-  line-height: 1.5;
+  color: rgb(85,85,85);
   margin-top: 4px;
-  margin-bottom: 0;
-}
-
-img.nature,
-img.culture,
-img.contact-photo,
-img.research-photo {
-  width: 100%;
-  float: none;
-  text-align: center;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 4px;
-}
-
-.imgcap {
-  color: rgb(85, 85, 85);
-  font-size: 12px;
   line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: 0.9em;
+}
+
+.research-description {
+  margin-top: 0.5em;
 }
 
 .paperlink {
+  display: inline-block;
+  margin-top: 0.5em;
   font-weight: 400;
   color: orangered;
   text-decoration: none;
@@ -103,53 +88,54 @@ img.research-photo {
   text-decoration: underline;
 }
 
+
+
+/* copyright */
+
 #copyright {
   font-size: 12px;
   background-color: rgb(245, 245, 245);
   color: #666;
   text-align: center;
-  margin-top: 0;
   padding-bottom: 5px;
 }
 
+
+
+/* responsive */
+
 @media screen and (max-width: 1150px) {
-  #main {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-  }
+
+#main {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
 }
 
 @media screen and (max-width: 1050px) {
-  #main {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-  }
+
+#main {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 }
 
 @media screen and (max-width: 900px) {
-  #main {
-    padding-top: 160px;
-  }
 
-  #main section {
-    padding: 25px 25px 25px 25px;
-  }
+#main {
+  padding-top: 160px;
+}
 
-  #main-in {
-    padding-left: 0;
-  }
+#main section {
+  padding: 25px 25px 25px 25px;
+}
 
-  #main img {
-    width: 100%;
-    float: none;
-    padding-right: 0;
-    padding-top: 0;
-  }
+#main-in {
+  padding-left: 0;
+}
 
-  .research-figure figcaption,
-  .imgcap {
-    font-size: 12px;
-  }
 }
