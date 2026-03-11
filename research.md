@@ -8,5 +8,5 @@ permalink: /research/
 
 <section class="welcome">
   <h1>Research</h1>
-  <p>Replace this section with the contents of your original research page.</p>
+  <p>This page is under construction.</p>
 </section>

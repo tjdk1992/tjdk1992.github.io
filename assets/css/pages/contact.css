@@ -33,6 +33,7 @@
 #main h2 {
   color: rgb(50, 50, 50);
   font-size: 200%;
+  margin-top: 1.1em;
   margin-bottom: .7em;
 }
 
@@ -47,9 +48,15 @@ img.culture {
   font-size: 10px;
 }
 
+.map-wrap {
+  width: 100%;
+}
+
 iframe {
   width: 100%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 3 / 2;
+  border: 0;
+  display: block;
 }
 
 #copyright {
