@@ -58,8 +58,6 @@
   margin-bottom: 0.6em;
 }
 
-/* Research topic */
-
 .research-topic {
   margin-top: 2.5em;
   padding-top: 1.5em;
@@ -70,8 +68,6 @@
   border-top: none;
   margin-top: 0;
 }
-
-/* Photo + wrapped text */
 
 .research-lead {
   margin-bottom: 0.8em;
@@ -118,8 +114,6 @@
   text-decoration: underline;
 }
 
-/* Key papers */
-
 .key-papers {
   clear: both;
   margin-top: 1.2em;
@@ -150,8 +144,6 @@
   font-weight: 700;
 }
 
-/* copyright */
-
 #copyright {
   font-size: 12px;
   background-color: rgb(245, 245, 245);
@@ -159,8 +151,6 @@
   text-align: center;
   padding-bottom: 5px;
 }
-
-/* responsive */
 
 @media screen and (max-width: 1150px) {
   #main {

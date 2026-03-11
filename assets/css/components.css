@@ -17,7 +17,7 @@
 }
 
 #sidebar {
-  margin: 25px;
+  margin: 45px 25px 25px 25px;
   font-size: 15px;
   padding-top: 240px;
   padding-left: 55px;
@@ -68,7 +68,29 @@
   color: rgb(50, 50, 50);
 }
 
+/* shared image + caption component */
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+  margin-bottom: 0;
+}
+
+figcaption,
+.imgcap {
+  color: rgb(85, 85, 85);
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 4px;
+  margin-bottom: 0.9em;
+}
+
 /* nav-toggle */
+
 #nav-toggle {
   display: none;
   position: fixed;
@@ -125,7 +147,7 @@
   }
 
   #sidebar {
-    margin: 10px;
+    margin: 30px 10px 10px 10px;
     padding-top: 240px;
     padding-left: 50px;
   }
@@ -139,7 +161,7 @@
   }
 
   #sidebar {
-    margin: 0px;
+    margin: 20px 0 0 0;
     padding-top: 220px;
     padding-left: 40px;
   }
@@ -169,6 +191,7 @@
     background: #fff;
     transition: .35s ease-in-out;
     z-index: 300;
+    margin: 0;
   }
 
   #nav-toggle {
