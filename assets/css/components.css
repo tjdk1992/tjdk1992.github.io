@@ -90,7 +90,7 @@
 .fa-linkedin,
 .fa-github,
 .fa-medium {
-  font-size: 1.5em;
+  font-size: 1.35em;
 }
 
 /* academicons: monochrome + slightly larger for visual balance */
@@ -98,7 +98,7 @@
 .ai-google-scholar,
 .ai-researchgate {
   color: rgb(50, 50, 50);
-  font-size: 1.5em;
+  font-size: 1.35em;
 }
 
 /* figure component */
