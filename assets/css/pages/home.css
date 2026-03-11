@@ -38,6 +38,10 @@ img.rayong01 {
   padding: 12px 100px 12px 100px;
 }
 
+#main section:first-child {
+  margin-top: 20px;
+}
+
 #main .welcome {
   padding-top: 30px;
 }
@@ -99,6 +103,8 @@ img.rayong01 {
 
   #main section {
     padding: 25px 25px !important;
+    margin-top: 0 !important;
+    min-height: auto !important;
   }
 
   #main .welcome,
