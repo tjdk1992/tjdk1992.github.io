@@ -7,7 +7,7 @@
   margin: 0 auto;
   padding: 20px;
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 0;
 }
 
@@ -16,7 +16,6 @@
 #left-column {
   flex: 0 0 300px;
   width: 300px;
-
   background: #ffffff;
 
   display: flex;
@@ -25,7 +24,8 @@
   position: sticky;
   top: 0px;
 
-  height: fit-content;
+  min-height: calc(100vh - 40px);
+  align-self: flex-start;
 }
 
 /* header */
