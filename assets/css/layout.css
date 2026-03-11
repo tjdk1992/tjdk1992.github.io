@@ -53,6 +53,12 @@
   min-width: 0;
 }
 
+/* desktop では隠す */
+#nav-toggle,
+#overlay {
+  display: none;
+}
+
 /* mobile */
 @media screen and (max-width: 900px) {
   body {
@@ -69,6 +75,8 @@
     width: 100%;
     height: auto;
     background: transparent;
+    display: block;
+    overflow: visible;
   }
 
   #global-head {
@@ -79,22 +87,23 @@
     z-index: 100;
   }
 
-  /* sidebar は通常は画面外に隠す */
   #sidebar {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     right: -270px;
+    left: auto;
     width: 270px;
     height: 100vh;
     padding: 90px 20px 25px 25px;
+    margin: 0;
     background: #fff;
     overflow-y: auto;
     transition: right .35s ease-in-out;
     z-index: 300;
-    margin-top: 0;
+    display: block;
+    flex: none;
   }
 
-  /* 開いたとき */
   body.open #sidebar {
     right: 0;
   }
@@ -109,7 +118,6 @@
     padding: 25px;
   }
 
-  /* ハンバーガーボタン */
   #nav-toggle {
     position: fixed;
     top: 16px;
@@ -149,8 +157,8 @@
     transform: translateY(-7px) rotate(-45deg);
   }
 
-  /* 背景オーバーレイ */
   #overlay {
+    display: block;
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.25);
