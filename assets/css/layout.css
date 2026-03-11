@@ -7,25 +7,25 @@
   margin: 0 auto;
   padding: 20px;
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 0;
 }
 
-/* 左カラムの外箱：main と同じ高さまで伸ばす */
+/* 左カラム */
+
 #left-column {
   flex: 0 0 300px;
   width: 300px;
   background: #ffffff;
-  align-self: stretch;
-}
 
-/* sticky にするのは中身だけ */
-#left-column-inner {
-  position: sticky;
-  top: 20px;
-  min-height: calc(100vh - 40px);
   display: flex;
   flex-direction: column;
+
+  position: sticky;
+  top: 20px;
+
+  height: calc(100vh - 40px);
+  align-self: flex-start;
 }
 
 /* header */
@@ -54,6 +54,7 @@
 #main {
   flex: 1 1 auto;
   min-width: 0;
+
   height: auto;
   overflow: visible;
 }
@@ -73,6 +74,7 @@
 /* mobile */
 
 @media screen and (max-width: 900px) {
+
   body {
     overflow-x: hidden;
   }
@@ -84,13 +86,9 @@
 
   #left-column {
     width: 100%;
-    background: transparent;
-  }
-
-  #left-column-inner {
     position: static;
     top: auto;
-    min-height: auto;
+    background: transparent;
     display: block;
   }
 
@@ -107,16 +105,20 @@
     top: 0;
     right: -270px;
     left: auto;
+
     width: 270px;
     height: 100vh;
+
     padding: 90px 20px 25px 25px;
     margin: 0;
+
     background: #fff;
+
     overflow-y: auto;
+
     transition: right .35s ease-in-out;
+
     z-index: 300;
-    flex: none;
-    display: block;
   }
 
   body.open #sidebar {
@@ -131,14 +133,20 @@
     position: fixed;
     top: 16px;
     right: 16px;
+
     width: 44px;
     height: 44px;
+
     background: rgba(255,255,255,0.95);
+
     border-radius: 6px;
+
     z-index: 400;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     cursor: pointer;
   }
 
@@ -168,12 +176,17 @@
 
   #overlay {
     display: block;
+
     position: fixed;
     inset: 0;
+
     background: rgba(0,0,0,0.25);
+
     opacity: 0;
     visibility: hidden;
+
     transition: .25s ease-in-out;
+
     z-index: 250;
   }
 
