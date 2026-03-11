@@ -37,6 +37,8 @@ img {
 }
 
 .total {
-  margin: 0 auto 0 auto;
+  width: 100%;
   max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
 }
