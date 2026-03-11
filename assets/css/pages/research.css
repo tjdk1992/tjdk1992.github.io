@@ -58,19 +58,21 @@
   margin-bottom: 0.5em;
 }
 
-/* Research topic block */
 
-.research-topic {
-  margin-bottom: 1.8em;
-}
+/* -------------------- */
+/* Research image block */
+/* -------------------- */
 
 .research-figure {
   width: 50%;
-  margin: 0 0 1em 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
+/* ここが重要（home.css を上書き） */
+
 .research-figure img {
-  width: 100%;
+  width: 100% !important;
   display: block;
 }
 
@@ -80,16 +82,20 @@
   font-size: 12px;
   line-height: 1.5;
   margin-top: 4px;
-  margin-bottom: 0;
 }
 
+
+/* -------------------- */
+/* Text blocks */
+/* -------------------- */
+
 .research-description {
-  margin-top: 0.5em;
+  margin-top: 5px;
 }
 
 .paperlink {
   display: inline-block;
-  margin-top: 0.3em;
+  margin-top: 3px;
   font-weight: 400;
   color: orangered;
   text-decoration: none;
@@ -99,11 +105,13 @@
   text-decoration: underline;
 }
 
-/* Key papers block */
+
+/* -------------------- */
+/* Key papers */
+/* -------------------- */
 
 .key-papers {
   margin-top: 1.1em;
-  padding-top: 0.2em;
 }
 
 .key-papers ul {
@@ -119,15 +127,14 @@
   color: rgb(50, 50, 50);
 }
 
-.key-papers em {
-  font-style: italic;
-}
-
 .key-papers strong {
   font-weight: 700;
 }
 
+
+/* -------------------- */
 /* copyright */
+/* -------------------- */
 
 #copyright {
   font-size: 12px;
@@ -137,40 +144,49 @@
   padding-bottom: 5px;
 }
 
+
+/* -------------------- */
+/* Responsive */
+/* -------------------- */
+
 @media screen and (max-width: 1150px) {
-  #main {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-  }
+
+#main {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
 }
 
 @media screen and (max-width: 1050px) {
-  #main {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-  }
+
+#main {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
 }
 
 @media screen and (max-width: 900px) {
-  #main {
-    padding-top: 160px;
-  }
 
-  #main section {
-    padding: 25px 25px 25px 25px;
-  }
+#main {
+  padding-top: 160px;
+}
 
-  #main-in {
-    padding-left: 0;
-  }
+#main section {
+  padding: 25px;
+}
 
-  .research-figure {
-    width: 100%;
-  }
+#main-in {
+  padding-left: 0;
+}
 
-  .research-figure figcaption {
-    font-size: 12px;
-  }
+/* モバイルではフル幅 */
+
+.research-figure {
+  width: 100%;
+}
+
 }
