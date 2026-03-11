@@ -59,17 +59,24 @@
 }
 
 
-/* -------------------- */
-/* Research image block */
-/* -------------------- */
+/* ------------------------------ */
+/* Research topic layout */
+/* ------------------------------ */
+
+.research-topic {
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+
+/* image block */
 
 .research-figure {
   width: 50%;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 10px;
 }
-
-/* ここが重要（home.css を上書き） */
 
 .research-figure img {
   width: 100% !important;
@@ -85,12 +92,10 @@
 }
 
 
-/* -------------------- */
-/* Text blocks */
-/* -------------------- */
+/* description */
 
 .research-description {
-  margin-top: 5px;
+  overflow: hidden;
 }
 
 .paperlink {
@@ -106,12 +111,13 @@
 }
 
 
-/* -------------------- */
+/* ------------------------------ */
 /* Key papers */
-/* -------------------- */
+/* ------------------------------ */
 
 .key-papers {
-  margin-top: 1.1em;
+  clear: both;
+  margin-top: 1.2em;
 }
 
 .key-papers ul {
@@ -132,9 +138,9 @@
 }
 
 
-/* -------------------- */
+/* ------------------------------ */
 /* copyright */
-/* -------------------- */
+/* ------------------------------ */
 
 #copyright {
   font-size: 12px;
@@ -145,9 +151,9 @@
 }
 
 
-/* -------------------- */
-/* Responsive */
-/* -------------------- */
+/* ------------------------------ */
+/* responsive */
+/* ------------------------------ */
 
 @media screen and (max-width: 1150px) {
 
@@ -183,10 +189,12 @@
   padding-left: 0;
 }
 
-/* モバイルではフル幅 */
+/* mobile image */
 
 .research-figure {
+  float: none;
   width: 100%;
+  margin-right: 0;
 }
 
 }
