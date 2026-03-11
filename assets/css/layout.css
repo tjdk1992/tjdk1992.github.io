@@ -44,8 +44,9 @@
 
 #sidebar {
   padding: 30px 55px 40px 55px;
-  margin: 0;
-  flex: 1 1 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* 右カラム */
