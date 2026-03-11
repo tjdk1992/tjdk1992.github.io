@@ -14,8 +14,8 @@
 /* 左カラム */
 
 #left-column {
-  flex: 0 0 300px;
-  width: 300px;
+  flex: 0 0 330px;
+  width: 330px;
   background: #ffffff;
 
   display: flex;
