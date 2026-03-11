@@ -5,7 +5,7 @@
 - name: "ORCID"
   url: "https://orcid.org/0000-0002-1041-7737"
   icon: "ai ai-orcid"
-  
+
 - name: "Instagram"
   url: "https://www.instagram.com/tjdk1992/"
   icon: "fab fa-instagram fa-fw fa-lg"
@@ -17,3 +17,8 @@
 - name: "GitHub"
   url: "https://github.com/tjdk1992"
   icon: "fab fa-github fa-fw fa-lg"
+  
+- name: "Google Scholar"
+  url: "https://scholar.google.com/citations?user=0FkZEeYAAAAJ&hl=en&oi=ao"
+  icon: "ai ai-google-scholar"
+  row: 2

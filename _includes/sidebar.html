@@ -39,7 +39,7 @@
 
   <div class="socialmedia">
     {% for item in site.data.social %}
-      <p>
+      <p class="{% if item.row == 2 %}social-row2{% endif %}">
         <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ item.name }}">
           <i class="{{ item.icon }}"></i>
         </a>
