@@ -47,35 +47,46 @@
   color: rgb(50, 50, 50);
   font-size: 200%;
   margin-bottom: .7em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #main h3 {
-  color: rgb(50, 50, 50);
-  font-size: 1.15em;
-  font-weight: 400;
+  color: rgb(60, 60, 60);
+  font-size: 1.1em;
+  font-weight: 500;
   margin-top: 1.2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
 }
 
-
-/* ------------------------------ */
-/* Research topic layout */
-/* ------------------------------ */
+/* Research topic */
 
 .research-topic {
-  margin-bottom: 2em;
-  overflow: hidden;
+  margin-top: 2.5em;
+  padding-top: 1.5em;
+  border-top: 1px solid rgb(220,220,220);
 }
 
+.research-topic:first-of-type {
+  border-top: none;
+  margin-top: 0;
+}
 
-/* image block */
+/* Photo + wrapped text */
+
+.research-lead {
+  margin-bottom: 0.8em;
+}
+
+.research-lead::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 .research-figure {
-  width: 50%;
   float: left;
-  margin-right: 25px;
-  margin-bottom: 10px;
+  width: 48%;
+  margin: 0 28px 12px 0;
 }
 
 .research-figure img {
@@ -89,35 +100,37 @@
   font-size: 12px;
   line-height: 1.5;
   margin-top: 4px;
+  margin-bottom: 0;
 }
 
-
-/* description */
-
 .research-description {
-  overflow: hidden;
+  min-width: 0;
 }
 
 .paperlink {
   display: inline-block;
-  margin-top: 3px;
+  margin-top: 0.4em;
   font-weight: 400;
   color: orangered;
-  text-decoration: none;
 }
 
 .paperlink:hover {
   text-decoration: underline;
 }
 
-
-/* ------------------------------ */
 /* Key papers */
-/* ------------------------------ */
 
 .key-papers {
   clear: both;
   margin-top: 1.2em;
+  padding: 18px 22px;
+  background: rgb(250,250,250);
+  border: 1px solid rgb(230,230,230);
+  border-radius: 4px;
+}
+
+.key-papers h3 {
+  margin-top: 0;
 }
 
 .key-papers ul {
@@ -137,10 +150,7 @@
   font-weight: 700;
 }
 
-
-/* ------------------------------ */
 /* copyright */
-/* ------------------------------ */
 
 #copyright {
   font-size: 12px;
@@ -150,51 +160,40 @@
   padding-bottom: 5px;
 }
 
-
-/* ------------------------------ */
 /* responsive */
-/* ------------------------------ */
 
 @media screen and (max-width: 1150px) {
-
-#main {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-}
-
+  #main {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
-
-#main {
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-}
-
+  #main {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
 }
 
 @media screen and (max-width: 900px) {
+  #main {
+    padding-top: 160px;
+  }
 
-#main {
-  padding-top: 160px;
-}
+  #main section {
+    padding: 25px 25px 25px 25px;
+  }
 
-#main section {
-  padding: 25px;
-}
+  #main-in {
+    padding-left: 0;
+  }
 
-#main-in {
-  padding-left: 0;
-}
-
-/* mobile image */
-
-.research-figure {
-  float: none;
-  width: 100%;
-  margin-right: 0;
-}
-
+  .research-figure {
+    float: none;
+    width: 100%;
+    margin: 0 0 12px 0;
+  }
 }
