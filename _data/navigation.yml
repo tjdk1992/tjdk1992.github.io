@@ -9,7 +9,7 @@
   external: false
 
 - label: "Current CV"
-  url: "/assets/files/cv/My_CV.pdf"
+  url: "/assets/files/cv/daiki-tomojiri-cv.pdf"
   strong: false
   external: true
 
