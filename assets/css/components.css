@@ -83,6 +83,12 @@
   color: rgb(50, 50, 50);
 }
 
+.socialmedia i {
+  width: 1.25em;
+  text-align: center;
+  display: inline-block;
+}
+
 /* figure component */
 
 .page-figure,
