@@ -1,24 +1,23 @@
-- name: "LinkedIn"
-  url: "https://www.linkedin.com/in/daiki-tomojiri/"
-  icon: "fab fa-linkedin fa-fw fa-lg"
-
 - name: "ORCID"
-  url: "https://orcid.org/0000-0002-1041-7737"
+  url: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
   icon: "ai ai-orcid"
 
-- name: "Instagram"
-  url: "https://www.instagram.com/tjdk1992/"
-  icon: "fab fa-instagram fa-fw fa-lg"
+- name: "Google Scholar"
+  url: "https://scholar.google.com/citations?user=XXXX"
+  icon: "ai ai-google-scholar"
 
-- name: "Medium"
-  url: "https://medium.com/@tjdk1992"
-  icon: "fab fa-medium fa-fw fa-lg"
+- name: "ResearchGate"
+  url: "https://www.researchgate.net/profile/XXXX"
+  icon: "ai ai-researchgate"
+
+- name: "LinkedIn"
+  url: "https://www.linkedin.com/in/XXXX"
+  icon: "fab fa-linkedin"
 
 - name: "GitHub"
-  url: "https://github.com/tjdk1992"
-  icon: "fab fa-github fa-fw fa-lg"
-  
-- name: "Google Scholar"
-  url: "https://scholar.google.com/citations?user=0FkZEeYAAAAJ&hl=en&oi=ao"
-  icon: "ai ai-google-scholar"
-  row: 2
+  url: "https://github.com/XXXX"
+  icon: "fab fa-github"
+
+- name: "Medium"
+  url: "https://medium.com/@XXXX"
+  icon: "fab fa-medium"
