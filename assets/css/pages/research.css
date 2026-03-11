@@ -29,12 +29,14 @@
 #main h1 {
   color: rgb(50, 50, 50);
   font-size: 3em;
+  font-weight: 400;
   margin-bottom: .7em;
 }
 
 #main h2 {
   color: rgb(50, 50, 50);
   font-size: 170%;
+  font-weight: 400;
   margin-bottom: .7em;
 }
 
@@ -46,9 +48,25 @@
   padding-top: 5px;
 }
 
+/* full-width photo styles for future research page images */
+img.nature,
+img.culture,
+img.contact-photo,
+img.research-photo {
+  width: 100%;
+  float: none;
+  text-align: center;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 4px;
+}
+
 .imgcap {
   color: rgb(85, 85, 85);
-  font-size: 15.5px;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0.9em;
 }
 
 #copyright {
@@ -93,5 +111,10 @@
     width: 100%;
     float: none;
     padding-right: 0;
+    padding-top: 0;
+  }
+
+  .imgcap {
+    font-size: 12px;
   }
 }
