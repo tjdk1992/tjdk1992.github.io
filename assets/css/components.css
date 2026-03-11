@@ -54,13 +54,27 @@
 .socialmedia p {
   padding-top: 25px;
   margin: 0;
+}
+
+/* 左端 */
+.socialmedia p:nth-child(1) {
+  text-align: left;
+}
+
+/* 中央3つ */
+.socialmedia p:nth-child(2),
+.socialmedia p:nth-child(3),
+.socialmedia p:nth-child(4) {
   text-align: center;
 }
 
+/* 右端 */
+.socialmedia p:nth-child(5) {
+  text-align: right;
+}
+
 .socialmedia a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   color: rgb(50, 50, 50);
 }
 
