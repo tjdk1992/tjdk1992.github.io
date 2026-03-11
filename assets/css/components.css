@@ -43,6 +43,10 @@
   text-decoration: underline;
 }
 
+#global-nav a.active {
+  font-weight: 700;
+}
+
 /* social icons */
 
 .socialmedia {
