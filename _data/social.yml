@@ -1,23 +1,23 @@
 - name: "ORCID"
-  url: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+  url: "https://orcid.org/0000-0002-1041-7737"
   icon: "ai ai-orcid"
 
 - name: "Google Scholar"
-  url: "https://scholar.google.com/citations?user=XXXX"
+  url: "https://scholar.google.com/citations?user=0FkZEeYAAAAJ&hl"
   icon: "ai ai-google-scholar"
 
 - name: "ResearchGate"
-  url: "https://www.researchgate.net/profile/XXXX"
+  url: "https://www.researchgate.net/profile/Daiki-Tomojiri-Kadotani"
   icon: "ai ai-researchgate"
 
 - name: "LinkedIn"
-  url: "https://www.linkedin.com/in/XXXX"
+  url: "https://www.linkedin.com/in/daiki-tomojiri-kadotani-04b9363b6/"
   icon: "fab fa-linkedin"
 
 - name: "GitHub"
-  url: "https://github.com/XXXX"
+  url: "https://github.com/tjdk1992"
   icon: "fab fa-github"
 
 - name: "Medium"
-  url: "https://medium.com/@XXXX"
+  url: "https://medium.com/@tomojiri.daiki"
   icon: "fab fa-medium"
