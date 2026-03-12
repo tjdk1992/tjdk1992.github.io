@@ -75,9 +75,9 @@ permalink: /research/
 
   <div class="research-lead">
     <figure class="research-figure">
-      <img src="{{ '/assets/img/research/research_02.jpg' | relative_url }}" alt="Ecosystem survey conducted in Sekisei Lagoon, the largest coral reef area in Japan">
+      <img src="{{ '/assets/img/research/research_02.jpg' | relative_url }}" alt="Coral reef ecosystem survey conducted in Sekisei Lagoon, the largest coral reef area in Japan">
       <figcaption>
-        Sailfin catfish (<i>Pterygoplichthys</i> spp.) sold in a local market in Can Tho City, Mekong Delta, Vietnam.
+        Coral reef ecosystem survey conducted in Sekisei Lagoon, the largest coral reef area in Japan.
       </figcaption>
     </figure>
 
@@ -130,9 +130,9 @@ permalink: /research/
 
   <div class="research-lead">
     <figure class="research-figure">
-      <img src="{{ '/assets/img/research/research_03.jpg' | relative_url }}" alt="Seawater filtration for environmental DNA analysis on a sandy beach in Yoron Island, Japan">
+      <img src="{{ '/assets/img/research/research_03.jpg' | relative_url }}" alt="Seawater filtration for environmental DNA metabarcoding analysis on a sandy beach in Yoron Island, Japan">
       <figcaption>
-        Sailfin catfish (<i>Pterygoplichthys</i> spp.) sold in a local market in Can Tho City, Mekong Delta, Vietnam.
+        Seawater filtration for environmental DNA metabarcoding analysis on a sandy beach in Yoron Island, Japan.
       </figcaption>
     </figure>
 
@@ -185,9 +185,9 @@ permalink: /research/
 
   <div class="research-lead">
     <figure class="research-figure">
-      <img src="{{ '/assets/img/research/research_04.jpg' | relative_url }}" alt="Marine debris buried in a sandy beach along the coast of the Seto Inland Sea, Japan">
+      <img src="{{ '/assets/img/research/research_04.jpg' | relative_url }}" alt="Discovery of marine debris buried in a sandy beach along the coast of the Seto Inland Sea, Japan">
       <figcaption>
-        Sailfin catfish (<i>Pterygoplichthys</i> spp.) sold in a local market in Can Tho City, Mekong Delta, Vietnam.
+        Discovery of marine debris buried in a sandy beach along the coast of the Seto Inland Sea, Japan.
       </figcaption>
     </figure>
 
@@ -238,7 +238,7 @@ permalink: /research/
     <figure class="research-figure">
       <img src="{{ '/assets/img/research/research_05.png' | relative_url }}" alt="An example of seasonal variation in public interest in birds, inferred from Wikipedia pageviews as a proxy">
       <figcaption>
-        Sailfin catfish (<i>Pterygoplichthys</i> spp.) sold in a local market in Can Tho City, Mekong Delta, Vietnam.
+        An example of seasonal variation in public interest in birds, inferred from Wikipedia pageviews as a proxy.
       </figcaption>
     </figure>
 
