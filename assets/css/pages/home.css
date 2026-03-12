@@ -85,25 +85,46 @@ img.rayong01 {
 
 @media screen and (max-width: 900px) {
   #main {
-    padding: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   #main-in {
-    padding: 0 !important;
-    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
   }
 
-  #main section,
+  #main section {
+    padding: 25px 25px !important;
+  }
+
   #main .welcome,
   #main section:first-child {
-    padding: 25px 25px !important;
+    padding-top: 25px !important;
     margin-top: 0 !important;
     min-height: auto !important;
   }
 
-  #main h1,
   #main section:first-child > :first-child {
     margin-top: 0 !important;
+  }
+
+  .welcome,
+  .welcome p,
+  .welcome figure,
+  .welcome figcaption,
+  .welcome img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .welcome p,
+  .welcome figcaption {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #main h1 {
