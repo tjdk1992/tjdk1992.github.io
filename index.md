@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Welcome
-description: tmjdk-oecologist
+title: Aquatic Ecology, Coral Reef Ecosystems and eDNA Research
+description: Official academic website of Daiki Tomojiri-Kadotani, aquatic ecologist based in Kyoto, Japan. Research focuses on coral reef ecosystems, fish community ecology, environmental DNA (eDNA), and socio-ecological systems in Asia and the Pacific.
 page_css: /assets/css/pages/home.css
 ---
 

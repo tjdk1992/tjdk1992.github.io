@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Publication
-description: tmjdk-oecologist
+title: Publications
+description: Peer-reviewed publications by Daiki Tomojiri-Kadotani, including studies on coral reef bleaching, environmental DNA (eDNA), fish community ecology, invasive species, and socio-ecological systems.
 page_css: /assets/css/pages/publications.css
 permalink: /publications/
 ---

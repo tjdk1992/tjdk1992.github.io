@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Research
-description: tmjdk-oecologist
+description: Research themes of Daiki Tomojiri-Kadotani, including coral reef ecosystem resilience, environmental DNA monitoring of fish communities, invasive species ecology, and socio-ecological governance of coastal systems.
 page_css: /assets/css/pages/research.css
 permalink: /research/
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contact
-description: tmjdk-oecologist
+description: Contact information for Daiki Tomojiri-Kadotani, aquatic ecologist based in Kyoto, Japan.
 page_css: /assets/css/pages/contact.css
 permalink: /contact/
 ---
